@@ -3,10 +3,17 @@
 	let taxa = 0;
 	let tempo = 0;
 	let resultado = 0;
+	let texto ="O resultado é:"
   
 	function calcular() {
 	  const calculatarTaxa = 1 + taxa / 100;
 	  resultado = principal * Math.pow(calculatarTaxa, tempo);
+	  if(resultado<0){
+		alert("Não é possível calcular números negativos!");
+		resultado=false;
+	  }
+
+	  
 	}
   </script>
   
@@ -34,7 +41,7 @@
   
 	{#if resultado}
 	  <div class="result">
-		<p>O valor total é: {resultado.toFixed(2)}</p>
+		{texto} {resultado.toFixed(2)}
 	  </div>
 	{/if}
 
