@@ -45,6 +45,6 @@
 	  </div>
 	{/if}
 
-	<p class="group">BY: ELISON, ARTHUR, RUAN LUIZ.</p>
+	<p class="group">BY: ELISON, ARTHUR, RUAN.</p>
   </div>
   
